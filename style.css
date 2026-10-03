@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* PANTALLA DE EDAD */
+
+.pantalla {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at center, #333 0%, #111 60%);
+}
+
+.caja {
+    width: min(90%, 500px);
+
+    background: #1d1d1d;
+
+    padding: 45px 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.25);
+}
+
+.caja h1 {
+    color: #ff1744;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.caja p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 14px 20px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#entrar {
+    background: #ff1744;
+    color: white;
+}
+
+#salir {
+    background: #444;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* PAGINA PRINCIPAL */
+
+.oculto {
+    display: none !important;
+}
+
+#pagina {
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #181818;
+
+    border-bottom: 2px solid #ff1744;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #ff1744;
+}
+
+header p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+
+/* PERFILES */
+
+.perfiles {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 60px 20px;
+
+    flex-wrap: wrap;
+}
+
+.perfil {
+    width: 280px;
+
+    background: #1e1e1e;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #333;
+
+    transition: 0.25s;
+}
+
+.perfil:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff1744;
+
+    box-shadow: 0 10px 30px rgba(255, 23, 68, 0.2);
+}
+
+.foto {
+    width: 130px;
+    height: 130px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #ff1744, #7b0030);
+
+    font-size: 40px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.perfil h2 {
+    margin-bottom: 20px;
+}
+
+.ver-perfil {
+    background: #ff1744;
+    color: white;
+
+    width: 100%;
+}
+
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    padding: 20px;
+}
+
+.modal-caja {
+    width: min(90%, 500px);
+
+    background: #202020;
+
+    border: 2px solid #ff1744;
+
+    border-radius: 20px;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 0 60px rgba(255, 0, 60, 0.4);
+}
+
+.emoji {
+    font-size: 70px;
+
+    margin-bottom: 15px;
+}
+
+.modal-caja h1 {
+    color: #ff1744;
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.modal-caja p {
+    color: #ddd;
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+.ip {
+    background: #111;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+
+    font-family: monospace;
+}
+
+.ip strong {
+    color: #ff1744;
+}
+
+.pequeno {
+    font-size: 12px;
+
+    color: #777 !important;
+}
+
+#cerrar {
+    background: #ff1744;
+    color: white;
+
+    width: 100%;
+}
+.mono {
+    width: 220px;
+    max-width: 80%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
